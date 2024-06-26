@@ -24,6 +24,13 @@ while True:
     elif choice == '2':
         # Graphique de dispersion pour 'area' et 'price'
 
+        plt.figure(figsize=(10, 6))
+        plt.scatter(data['area'], data['price'], color='red', edgecolor='black')
+        plt.title('Graphique de dispersion: Surface - Prix')
+        plt.xlabel('Surface (pieds carrés)')
+        plt.ylabel('Prix (USD)')
+        plt.grid(True)
+        plt.show()
 
         break
     else:
